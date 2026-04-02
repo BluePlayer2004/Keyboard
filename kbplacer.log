@@ -1,0 +1,1774 @@
+INFO: kbplacer_plugin_action.py:73: Plugin version: 0.15
+INFO: kbplacer_plugin_action.py:74: Python version: '3.11.5 (main, Nov  6 2025, 07:48:09) [MSC v.1944 64 bit (AMD64)]'
+INFO: kbplacer_plugin_action.py:75: KiCad version: 9.0.7 with 4.2.2 msw (phoenix) wxWidgets 3.2.8
+INFO: kbplacer_dialog.py:689: Language: de
+INFO: kbplacer_plugin_action.py:83: GUI state: {"layout_path": "C:\\Users\\Nils\\Downloads\\keyboard-layout (1).json", "key_distance": [19.05, 19.05], "key_info": {"annotation_format": "MX{}", "position_option": "Default", "position": {"x": 0.0, "y": 0.0, "orientation": 0.0, "side": "Back"}, "template_path": "", "start_index": 1}, "enable_diode_placement": true, "route_switches_with_diodes": true, "optimize_diodes_orientation": true, "diode_info": {"annotation_format": "D{}", "position_option": "Custom", "position": {"x": -5.08, "y": -3.03, "orientation": 0.0, "side": "Back"}, "template_path": "", "start_index": -1}, "additional_elements": [], "route_rows_and_columns": false, "template_path": "", "generate_outline": false, "outline_delta": 0.0}
+DEBUG: key_placer.py:141: Switches by nets: defaultdict(<class 'list'>, {frozenset({'Row1', 'Col5'}): ['MX7', 'MX8'], frozenset({'Col4', 'Row6'}): ['MX101'], frozenset({'Col3', 'Row1'}): ['MX4', 'MX3'], frozenset({'Col2', 'Row1'}): ['MX2', 'MX1'], frozenset({'Row2', 'Col8'}): ['MX31', 'MX32'], frozenset({'Col9', 'Row2'}): ['MX33', 'MX34'], frozenset({'Col1', 'Row3'}): ['MX39', 'MX40'], frozenset({'Col9', 'Row5'}): ['MX94', 'MX95'], frozenset({'Col4', 'Row5'}): ['MX84', 'MX85'], frozenset({'Col5', 'Row6'}): ['MX103', 'MX102'], frozenset({'Col8', 'Row3'}): ['MX54', 'MX53'], frozenset({'Col6', 'Row6'}): ['MX105', 'MX104'], frozenset({'Row4', 'Col7'}): ['MX73', 'MX72'], frozenset({'Col2', 'Row6'}): ['MX99', 'MX98'], frozenset({'Col6', 'Row3'}): ['MX50', 'MX49'], frozenset({'Col3', 'Row3'}): ['MX44', 'MX43'], frozenset({'Row4', 'Col2'}): ['MX62', 'MX63'], frozenset({'Row2', 'Col1'}): ['MX17', 'MX18'], frozenset({'Row4', 'Col5'}): ['MX69', 'MX68'], frozenset({'Col4', 'Row1'}): ['MX5', 'MX6'], frozenset({'Row2', 'Col7'}): ['MX29', 'MX30'], frozenset({'Row4', 'Col1'}): ['MX61'], frozenset({'Col8', 'Row6'}): ['MX107', 'MX108'], frozenset({'Row4', 'Col8'}): ['MX75', 'MX74'], frozenset({'Col4', 'Row3'}): ['MX46', 'MX45'], frozenset({'Row2', 'Col6'}): ['MX27', 'MX28'], frozenset({'Row4', 'Col6'}): ['MX71', 'MX70'], frozenset({'Col10', 'Row1'}): ['MX38', 'MX37'], frozenset({'Col10', 'Row3'}): ['MX57', 'MX58'], frozenset({'Col3', 'Row5'}): ['MX83', 'MX82'], frozenset({'Row2', 'Col2'}): ['MX20', 'MX19'], frozenset({'Col5', 'Row3'}): ['MX48', 'MX47'], frozenset({'Row2', 'Col10'}): ['MX35', 'MX36'], frozenset({'Col9', 'Row4'}): ['MX76', 'MX77'], frozenset({'Col4', 'Row2'}): ['MX24', 'MX23'], frozenset({'Row1', 'Col7'}): ['MX12', 'MX11'], frozenset({'Col4', 'Row4'}): ['MX67', 'MX66'], frozenset({'Col9', 'Row1'}): ['MX16', 'MX15'], frozenset({'Col8', 'Row1'}): ['MX14', 'MX13'], frozenset({'Col9', 'Row3'}): ['MX55', 'MX56'], frozenset({'Row5', 'Col6'}): ['MX88', 'MX89'], frozenset({'Col7', 'Row3'}): ['MX51', 'MX52'], frozenset({'Col1', 'Row5'}): ['MX79', 'MX78'], frozenset({'Col2', 'Row5'}): ['MX80', 'MX81'], frozenset({'Row1', 'Col6'}): ['MX10', 'MX9'], frozenset({'Col2', 'Row3'}): ['MX42', 'MX41'], frozenset({'Col7', 'Row5'}): ['MX90', 'MX91'], frozenset({'Col3', 'Row6'}): ['MX100'], frozenset({'Col7', 'Row6'}): ['MX106'], frozenset({'Col8', 'Row5'}): ['MX92', 'MX93'], frozenset({'Col9', 'Row6'}): ['MX109', 'MX110'], frozenset({'Row2', 'Col3'}): ['MX22', 'MX21'], frozenset({'Row4', 'Col10'}): ['MX59', 'MX60'], frozenset({'Row2', 'Col5'}): ['MX26', 'MX25'], frozenset({'Col10', 'Row5'}): ['MX96'], frozenset({'Col5', 'Row5'}): ['MX86', 'MX87'], frozenset({'Row4', 'Col3'}): ['MX64', 'MX65'], frozenset({'Col1', 'Row6'}): ['MX97']})
+DEBUG: key_placer.py:145: Diodes by switch: {'MX83': ['D83'], 'MX62': ['D62'], 'MX81': ['D81'], 'MX23': ['D23'], 'MX36': ['D36'], 'MX50': ['D50'], 'MX104': ['D104'], 'MX67': ['D67'], 'MX14': ['D14'], 'MX96': ['D96'], 'MX42': ['D42'], 'MX17': ['D17'], 'MX32': ['D32'], 'MX37': ['D37'], 'MX24': ['D24'], 'MX86': ['D86'], 'MX30': ['D30'], 'MX31': ['D31'], 'MX57': ['D57'], 'MX90': ['D90'], 'MX58': ['D58'], 'MX25': ['D25'], 'MX72': ['D72'], 'MX64': ['D64'], 'MX52': ['D52'], 'MX4': ['D4'], 'MX38': ['D38'], 'MX79': ['D79'], 'MX41': ['D41'], 'MX92': ['D92'], 'MX56': ['D56'], 'MX77': ['D77'], 'MX105': ['D105'], 'MX27': ['D27'], 'MX53': ['D53'], 'MX63': ['D63'], 'MX18': ['D18'], 'MX85': ['D85'], 'MX60': ['D60'], 'MX51': ['D51'], 'MX87': ['D87'], 'MX102': ['D102'], 'MX3': ['D3'], 'MX19': ['D19'], 'MX94': ['D94'], 'MX78': ['D78'], 'MX1': ['D1'], 'MX70': ['D70'], 'MX11': ['D11'], 'MX2': ['D2'], 'MX22': ['D22'], 'MX26': ['D26'], 'MX71': ['D71'], 'MX8': ['D8'], 'MX55': ['D55'], 'MX9': ['D9'], 'MX20': ['D20'], 'MX106': ['D106'], 'MX68': ['D68'], 'MX88': ['D88'], 'MX12': ['D12'], 'MX43': ['D43'], 'MX109': ['D109'], 'MX5': ['D5'], 'MX95': ['D95'], 'MX66': ['D66'], 'MX101': ['D101'], 'MX89': ['D89'], 'MX40': ['D40'], 'MX46': ['D46'], 'MX13': ['D13'], 'MX75': ['D75'], 'MX54': ['D54'], 'MX97': ['D97'], 'MX76': ['D76'], 'MX69': ['D69'], 'MX61': ['D61'], 'MX107': ['D107'], 'MX74': ['D74'], 'MX108': ['D108'], 'MX16': ['D16'], 'MX49': ['D49'], 'MX6': ['D6'], 'MX103': ['D103'], 'MX99': ['D99'], 'MX73': ['D73'], 'MX33': ['D33'], 'MX84': ['D84'], 'MX39': ['D39'], 'MX34': ['D34'], 'MX15': ['D15'], 'MX98': ['D98'], 'MX21': ['D21'], 'MX29': ['D29'], 'MX10': ['D10'], 'MX100': ['D100'], 'MX80': ['D80'], 'MX110': ['D110'], 'MX82': ['D82'], 'MX35': ['D35'], 'MX59': ['D59'], 'MX65': ['D65'], 'MX91': ['D91'], 'MX48': ['D48'], 'MX47': ['D47'], 'MX45': ['D45'], 'MX44': ['D44'], 'MX93': ['D93'], 'MX28': ['D28'], 'MX7': ['D7']}
+INFO: kle_serial.py:1016: User layout: [[{'x': 1, 'a': 7}, 'Esc', {'x': 1}, 'F1', 'F2', 'F3', 'F4', {'x': 0.5}, 'F5', 'F6', 'F7', 'F8', {'x': 0.5}, 'F9', 'F10', 'F11', 'F12', {'x': 0.25}, 'PrtSc', 'Scroll Lock', {'a': 4}, '\nBreak\n\n\n\n\n\n\n\nPause'], [{'a': 7}, '', {'a': 5}, '°\n\n\n\n\n\n^', '!\n\n\n\n\n\n1', '"\n\n\n\n\n\n2', '§\n\n\n\n\n\n3', '$\n\n\n\n\n\n4', '%\n\n\n\n\n\n5', '&\n\n\n\n\n\n6', {'a': 4}, '\n\n\n\n\n\n\n{\n/\n7', '\n\n\n\n\n\n\n[\n(\n8', '\n\n\n\n\n\n\n]\n)\n9', '\n\n\n\n\n\n\n}\n=\n0', '\n\n\n\n\n\n\n\\\n?\nß', {'a': 5}, '`\n\n\n\n\n\n´', {'a': 4, 'w': 2}, 'Backspace', {'x': 0.25, 'a': 7}, 'Insert', 'Home', 'PgUp', {'x': 0.25}, 'Num Lock', '/', '*', '-'], [{'f': 4}, '', {'w': 1.5}, 'Tab', {'a': 4}, '\n\n\n@\n\n\n\n\n\nQ', {'a': 7}, 'W', {'a': 4}, '\n\n\n€\n\n\n\n\n\nE', {'a': 7}, 'R', 'T', 'z', 'U', 'I', 'O', 'P', 'Ü', {'a': 4}, '\n\n\n~\n\n\n\n\n\n*\n+', {'x': 0.25, 'a': 7, 'w': 1.25, 'h': 2, 'w2': 1.5, 'h2': 1, 'x2': -0.25}, '', {'x': 0.25, 'f': 3}, 'Delete', 'End', 'PgDn', {'x': 0.25, 'a': 4}, '\nHome\n\n\n\n\n\n\n\n7', '\n↑\n\n\n\n\n\n\n\n8', '\nPgUp\n\n\n\n\n\n\n\n9', {'a': 7, 'h': 2}, '+'], [{'f': 4}, '', {'w': 1.75}, 'Caps Lock', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Ö', 'Ä', {'a': 5}, "\n#\n\n\n\n\n'", {'x': 4.75, 'a': 4, 'f': 3}, '\n←\n\n\n\n\n\n\n\n4', {'a': 7}, '5', {'a': 4}, '\n→\n\n\n\n\n\n\n\n6'], [{'a': 7, 'f': 4}, '', {'w': 1.25}, 'Shift', {'a': 4, 'f': 3}, '\n\n\n|\n\n\n\n\n\n<\n>', {'a': 7, 'f': 4}, 'Y', 'X', 'C', 'V', 'B', 'N', 'M', {'a': 5}, '\n,\n\n\n\n\n;', '\n.\n\n\n\n\n:', '\n-\n\n\n\n\n_', {'a': 7, 'w': 2.75}, 'Shift', {'x': 1.25, 'f': 3}, '↑', {'x': 1.25, 'a': 4}, '\nEnd\n\n\n\n\n\n\n\n1', '\n↓\n\n\n\n\n\n\n\n2', '\nPgDn\n\n\n\n\n\n\n\n3', {'a': 7, 'h': 2}, 'Enter'], [{'f': 4}, '', {'w': 1.25}, 'Ctrl', {'w': 1.25}, 'Win', {'w': 1.25}, 'Alt', {'w': 6.25}, '', {'w': 1.25}, 'Alt GR', {'w': 1.25}, 'Win', {'w': 1.25}, 'Menu', {'w': 1.25}, 'Ctrl', {'x': 0.25, 'f': 3}, '←', '↓', '→', {'x': 0.25, 'a': 4, 'w': 2}, '\nIns\n\n\n\n\n\n\n\n0', '\nDel\n\n\n\n\n\n\n\n.']]
+DEBUG: key_placer.py:751: Using key 1U distance: (19.05, 19.05) mm
+DEBUG: key_placer.py:757: Layout offset: (28575000, 28575000)
+DEBUG: kle_serial.py:1110: Layout with: x_ortholinear_keys=33, y_ortholinear_keys=110, rotated_keys=0, encoders=0, iso_enters=1 and unrecognized_shape_keys=0
+DEBUG: kle_serial.py:1135: Layout tagged: [<KeyboardTag.ROW_STAGGERED: 2>, <KeyboardTag.ISO: 5>]
+DEBUG: board_modifier.py:94: Setting MX1 footprint position: (57150000, 38100000)
+DEBUG: board_modifier.py:94: Setting MX2 footprint position: (95250000, 38100000)
+DEBUG: board_modifier.py:94: Setting MX3 footprint position: (114300000, 38100000)
+DEBUG: board_modifier.py:94: Setting MX4 footprint position: (133350000, 38100000)
+DEBUG: board_modifier.py:94: Setting MX5 footprint position: (152400000, 38100000)
+DEBUG: board_modifier.py:94: Setting MX6 footprint position: (180975000, 38100000)
+DEBUG: board_modifier.py:94: Setting MX7 footprint position: (200025000, 38100000)
+DEBUG: board_modifier.py:94: Setting MX8 footprint position: (219075000, 38100000)
+DEBUG: board_modifier.py:94: Setting MX9 footprint position: (238125000, 38100000)
+DEBUG: board_modifier.py:94: Setting MX10 footprint position: (266700000, 38100000)
+DEBUG: board_modifier.py:94: Setting MX11 footprint position: (285750000, 38100000)
+DEBUG: board_modifier.py:94: Setting MX12 footprint position: (304800000, 38100000)
+DEBUG: board_modifier.py:94: Setting MX13 footprint position: (323850000, 38100000)
+DEBUG: board_modifier.py:94: Setting MX14 footprint position: (347662500, 38100000)
+DEBUG: board_modifier.py:94: Setting MX15 footprint position: (366712500, 38100000)
+DEBUG: board_modifier.py:94: Setting MX16 footprint position: (385762500, 38100000)
+DEBUG: board_modifier.py:94: Setting MX17 footprint position: (38100000, 57150000)
+DEBUG: board_modifier.py:94: Setting MX18 footprint position: (57150000, 57150000)
+DEBUG: board_modifier.py:94: Setting MX19 footprint position: (76200000, 57150000)
+DEBUG: board_modifier.py:94: Setting MX20 footprint position: (95250000, 57150000)
+DEBUG: board_modifier.py:94: Setting MX21 footprint position: (114300000, 57150000)
+DEBUG: board_modifier.py:94: Setting MX22 footprint position: (133350000, 57150000)
+DEBUG: board_modifier.py:94: Setting MX23 footprint position: (152400000, 57150000)
+DEBUG: board_modifier.py:94: Setting MX24 footprint position: (171450000, 57150000)
+DEBUG: board_modifier.py:94: Setting MX25 footprint position: (190500000, 57150000)
+DEBUG: board_modifier.py:94: Setting MX26 footprint position: (209550000, 57150000)
+DEBUG: board_modifier.py:94: Setting MX27 footprint position: (228600000, 57150000)
+DEBUG: board_modifier.py:94: Setting MX28 footprint position: (247650000, 57150000)
+DEBUG: board_modifier.py:94: Setting MX29 footprint position: (266700000, 57150000)
+DEBUG: board_modifier.py:94: Setting MX30 footprint position: (285750000, 57150000)
+DEBUG: board_modifier.py:94: Setting MX31 footprint position: (314325000, 57150000)
+DEBUG: board_modifier.py:94: Setting MX32 footprint position: (347662500, 57150000)
+DEBUG: board_modifier.py:94: Setting MX33 footprint position: (366712500, 57150000)
+DEBUG: board_modifier.py:94: Setting MX34 footprint position: (385762500, 57150000)
+DEBUG: board_modifier.py:94: Setting MX35 footprint position: (409575000, 57150000)
+DEBUG: board_modifier.py:94: Setting MX36 footprint position: (428625000, 57150000)
+DEBUG: board_modifier.py:94: Setting MX37 footprint position: (447675000, 57150000)
+DEBUG: board_modifier.py:94: Setting MX38 footprint position: (466725000, 57150000)
+DEBUG: board_modifier.py:94: Setting MX39 footprint position: (38100000, 76200000)
+DEBUG: board_modifier.py:94: Setting MX40 footprint position: (61912500, 76200000)
+DEBUG: board_modifier.py:94: Setting MX41 footprint position: (85725000, 76200000)
+DEBUG: board_modifier.py:94: Setting MX42 footprint position: (104775000, 76200000)
+DEBUG: board_modifier.py:94: Setting MX43 footprint position: (123825000, 76200000)
+DEBUG: board_modifier.py:94: Setting MX44 footprint position: (142875000, 76200000)
+DEBUG: board_modifier.py:94: Setting MX45 footprint position: (161925000, 76200000)
+DEBUG: board_modifier.py:94: Setting MX46 footprint position: (180975000, 76200000)
+DEBUG: board_modifier.py:94: Setting MX47 footprint position: (200025000, 76200000)
+DEBUG: board_modifier.py:94: Setting MX48 footprint position: (219075000, 76200000)
+DEBUG: board_modifier.py:94: Setting MX49 footprint position: (238125000, 76200000)
+DEBUG: board_modifier.py:94: Setting MX50 footprint position: (257175000, 76200000)
+DEBUG: board_modifier.py:94: Setting MX51 footprint position: (276225000, 76200000)
+DEBUG: board_modifier.py:94: Setting MX52 footprint position: (295275000, 76200000)
+DEBUG: board_modifier.py:94: Setting MX53 footprint position: (321468750, 85725000)
+DEBUG: board_modifier.py:94: Setting MX54 footprint position: (347662500, 76200000)
+DEBUG: board_modifier.py:94: Setting MX55 footprint position: (366712500, 76200000)
+DEBUG: board_modifier.py:94: Setting MX56 footprint position: (385762500, 76200000)
+DEBUG: board_modifier.py:94: Setting MX57 footprint position: (409575000, 76200000)
+DEBUG: board_modifier.py:94: Setting MX58 footprint position: (428625000, 76200000)
+DEBUG: board_modifier.py:94: Setting MX59 footprint position: (447675000, 76200000)
+DEBUG: board_modifier.py:94: Setting MX60 footprint position: (466725000, 85725000)
+DEBUG: board_modifier.py:94: Setting MX61 footprint position: (38100000, 95250000)
+DEBUG: board_modifier.py:94: Setting MX62 footprint position: (64293750, 95250000)
+DEBUG: board_modifier.py:94: Setting MX63 footprint position: (90487500, 95250000)
+DEBUG: board_modifier.py:94: Setting MX64 footprint position: (109537500, 95250000)
+DEBUG: board_modifier.py:94: Setting MX65 footprint position: (128587500, 95250000)
+DEBUG: board_modifier.py:94: Setting MX66 footprint position: (147637500, 95250000)
+DEBUG: board_modifier.py:94: Setting MX67 footprint position: (166687500, 95250000)
+DEBUG: board_modifier.py:94: Setting MX68 footprint position: (185737500, 95250000)
+DEBUG: board_modifier.py:94: Setting MX69 footprint position: (204787500, 95250000)
+DEBUG: board_modifier.py:94: Setting MX70 footprint position: (223837500, 95250000)
+DEBUG: board_modifier.py:94: Setting MX71 footprint position: (242887500, 95250000)
+DEBUG: board_modifier.py:94: Setting MX72 footprint position: (261937500, 95250000)
+DEBUG: board_modifier.py:94: Setting MX73 footprint position: (280987500, 95250000)
+DEBUG: board_modifier.py:94: Setting MX74 footprint position: (300037500, 95250000)
+DEBUG: board_modifier.py:94: Setting MX75 footprint position: (409575000, 95250000)
+DEBUG: board_modifier.py:94: Setting MX76 footprint position: (428625000, 95250000)
+DEBUG: board_modifier.py:94: Setting MX77 footprint position: (447675000, 95250000)
+DEBUG: board_modifier.py:94: Setting MX78 footprint position: (38100000, 114300000)
+DEBUG: board_modifier.py:94: Setting MX79 footprint position: (59531250, 114300000)
+DEBUG: board_modifier.py:94: Setting MX80 footprint position: (80962500, 114300000)
+DEBUG: board_modifier.py:94: Setting MX81 footprint position: (100012500, 114300000)
+DEBUG: board_modifier.py:94: Setting MX82 footprint position: (119062500, 114300000)
+DEBUG: board_modifier.py:94: Setting MX83 footprint position: (138112500, 114300000)
+DEBUG: board_modifier.py:94: Setting MX84 footprint position: (157162500, 114300000)
+DEBUG: board_modifier.py:94: Setting MX85 footprint position: (176212500, 114300000)
+DEBUG: board_modifier.py:94: Setting MX86 footprint position: (195262500, 114300000)
+DEBUG: board_modifier.py:94: Setting MX87 footprint position: (214312500, 114300000)
+DEBUG: board_modifier.py:94: Setting MX88 footprint position: (233362500, 114300000)
+DEBUG: board_modifier.py:94: Setting MX89 footprint position: (252412500, 114300000)
+DEBUG: board_modifier.py:94: Setting MX90 footprint position: (271462500, 114300000)
+DEBUG: board_modifier.py:94: Setting MX91 footprint position: (307181250, 114300000)
+DEBUG: board_modifier.py:94: Setting MX92 footprint position: (366712500, 114300000)
+DEBUG: board_modifier.py:94: Setting MX93 footprint position: (409575000, 114300000)
+DEBUG: board_modifier.py:94: Setting MX94 footprint position: (428625000, 114300000)
+DEBUG: board_modifier.py:94: Setting MX95 footprint position: (447675000, 114300000)
+DEBUG: board_modifier.py:94: Setting MX96 footprint position: (466725000, 123825000)
+DEBUG: board_modifier.py:94: Setting MX97 footprint position: (38100000, 133350000)
+DEBUG: board_modifier.py:94: Setting MX98 footprint position: (59531250, 133350000)
+DEBUG: board_modifier.py:94: Setting MX99 footprint position: (83343750, 133350000)
+DEBUG: board_modifier.py:94: Setting MX100 footprint position: (107156250, 133350000)
+DEBUG: board_modifier.py:94: Setting MX101 footprint position: (178593750, 133350000)
+DEBUG: board_modifier.py:94: Setting MX102 footprint position: (250031250, 133350000)
+DEBUG: board_modifier.py:94: Setting MX103 footprint position: (273843750, 133350000)
+DEBUG: board_modifier.py:94: Setting MX104 footprint position: (297656250, 133350000)
+DEBUG: board_modifier.py:94: Setting MX105 footprint position: (321468750, 133350000)
+DEBUG: board_modifier.py:94: Setting MX106 footprint position: (347662500, 133350000)
+DEBUG: board_modifier.py:94: Setting MX107 footprint position: (366712500, 133350000)
+DEBUG: board_modifier.py:94: Setting MX108 footprint position: (385762500, 133350000)
+DEBUG: board_modifier.py:94: Setting MX109 footprint position: (419100000, 133350000)
+DEBUG: board_modifier.py:94: Setting MX110 footprint position: (447675000, 133350000)
+INFO: key_placer.py:1123: Diode info: [ElementInfo(annotation_format='D{}', position_option=<PositionOption.CUSTOM: 'Custom'>, position=ElementPosition(x=-5.08, y=-3.03, orientation=0.0, side=<Side.BACK: 'Back'>), template_path='', start_index=-1)]
+DEBUG: board_modifier.py:107: Getting MX1 footprint position: (57150000, 38100000)
+DEBUG: board_modifier.py:94: Setting D1 footprint position: (52070000, 35070000)
+DEBUG: board_modifier.py:107: Getting MX2 footprint position: (95250000, 38100000)
+DEBUG: board_modifier.py:94: Setting D2 footprint position: (90170000, 35070000)
+DEBUG: board_modifier.py:107: Getting MX3 footprint position: (114300000, 38100000)
+DEBUG: board_modifier.py:94: Setting D3 footprint position: (109220000, 35070000)
+DEBUG: board_modifier.py:107: Getting MX4 footprint position: (133350000, 38100000)
+DEBUG: board_modifier.py:94: Setting D4 footprint position: (128270000, 35070000)
+DEBUG: board_modifier.py:107: Getting MX5 footprint position: (152400000, 38100000)
+DEBUG: board_modifier.py:94: Setting D5 footprint position: (147320000, 35070000)
+DEBUG: board_modifier.py:107: Getting MX6 footprint position: (180975000, 38100000)
+DEBUG: board_modifier.py:94: Setting D6 footprint position: (175895000, 35070000)
+DEBUG: board_modifier.py:107: Getting MX7 footprint position: (200025000, 38100000)
+DEBUG: board_modifier.py:94: Setting D7 footprint position: (194945000, 35070000)
+DEBUG: board_modifier.py:107: Getting MX8 footprint position: (219075000, 38100000)
+DEBUG: board_modifier.py:94: Setting D8 footprint position: (213995000, 35070000)
+DEBUG: board_modifier.py:107: Getting MX9 footprint position: (238125000, 38100000)
+DEBUG: board_modifier.py:94: Setting D9 footprint position: (233045000, 35070000)
+DEBUG: board_modifier.py:107: Getting MX10 footprint position: (266700000, 38100000)
+DEBUG: board_modifier.py:94: Setting D10 footprint position: (261620000, 35070000)
+DEBUG: board_modifier.py:107: Getting MX11 footprint position: (285750000, 38100000)
+DEBUG: board_modifier.py:94: Setting D11 footprint position: (280670000, 35070000)
+DEBUG: board_modifier.py:107: Getting MX12 footprint position: (304800000, 38100000)
+DEBUG: board_modifier.py:94: Setting D12 footprint position: (299720000, 35070000)
+DEBUG: board_modifier.py:107: Getting MX13 footprint position: (323850000, 38100000)
+DEBUG: board_modifier.py:94: Setting D13 footprint position: (318770000, 35070000)
+DEBUG: board_modifier.py:107: Getting MX14 footprint position: (347662500, 38100000)
+DEBUG: board_modifier.py:94: Setting D14 footprint position: (342582500, 35070000)
+DEBUG: board_modifier.py:107: Getting MX15 footprint position: (366712500, 38100000)
+DEBUG: board_modifier.py:94: Setting D15 footprint position: (361632500, 35070000)
+DEBUG: board_modifier.py:107: Getting MX16 footprint position: (385762500, 38100000)
+DEBUG: board_modifier.py:94: Setting D16 footprint position: (380682500, 35070000)
+DEBUG: board_modifier.py:107: Getting MX17 footprint position: (38100000, 57150000)
+DEBUG: board_modifier.py:94: Setting D17 footprint position: (33020000, 54120000)
+DEBUG: board_modifier.py:107: Getting MX18 footprint position: (57150000, 57150000)
+DEBUG: board_modifier.py:94: Setting D18 footprint position: (52070000, 54120000)
+DEBUG: board_modifier.py:107: Getting MX19 footprint position: (76200000, 57150000)
+DEBUG: board_modifier.py:94: Setting D19 footprint position: (71120000, 54120000)
+DEBUG: board_modifier.py:107: Getting MX20 footprint position: (95250000, 57150000)
+DEBUG: board_modifier.py:94: Setting D20 footprint position: (90170000, 54120000)
+DEBUG: board_modifier.py:107: Getting MX21 footprint position: (114300000, 57150000)
+DEBUG: board_modifier.py:94: Setting D21 footprint position: (109220000, 54120000)
+DEBUG: board_modifier.py:107: Getting MX22 footprint position: (133350000, 57150000)
+DEBUG: board_modifier.py:94: Setting D22 footprint position: (128270000, 54120000)
+DEBUG: board_modifier.py:107: Getting MX23 footprint position: (152400000, 57150000)
+DEBUG: board_modifier.py:94: Setting D23 footprint position: (147320000, 54120000)
+DEBUG: board_modifier.py:107: Getting MX24 footprint position: (171450000, 57150000)
+DEBUG: board_modifier.py:94: Setting D24 footprint position: (166370000, 54120000)
+DEBUG: board_modifier.py:107: Getting MX25 footprint position: (190500000, 57150000)
+DEBUG: board_modifier.py:94: Setting D25 footprint position: (185420000, 54120000)
+DEBUG: board_modifier.py:107: Getting MX26 footprint position: (209550000, 57150000)
+DEBUG: board_modifier.py:94: Setting D26 footprint position: (204470000, 54120000)
+DEBUG: board_modifier.py:107: Getting MX27 footprint position: (228600000, 57150000)
+DEBUG: board_modifier.py:94: Setting D27 footprint position: (223520000, 54120000)
+DEBUG: board_modifier.py:107: Getting MX28 footprint position: (247650000, 57150000)
+DEBUG: board_modifier.py:94: Setting D28 footprint position: (242570000, 54120000)
+DEBUG: board_modifier.py:107: Getting MX29 footprint position: (266700000, 57150000)
+DEBUG: board_modifier.py:94: Setting D29 footprint position: (261620000, 54120000)
+DEBUG: board_modifier.py:107: Getting MX30 footprint position: (285750000, 57150000)
+DEBUG: board_modifier.py:94: Setting D30 footprint position: (280670000, 54120000)
+DEBUG: board_modifier.py:107: Getting MX31 footprint position: (314325000, 57150000)
+DEBUG: board_modifier.py:94: Setting D31 footprint position: (309245000, 54120000)
+DEBUG: board_modifier.py:107: Getting MX32 footprint position: (347662500, 57150000)
+DEBUG: board_modifier.py:94: Setting D32 footprint position: (342582500, 54120000)
+DEBUG: board_modifier.py:107: Getting MX33 footprint position: (366712500, 57150000)
+DEBUG: board_modifier.py:94: Setting D33 footprint position: (361632500, 54120000)
+DEBUG: board_modifier.py:107: Getting MX34 footprint position: (385762500, 57150000)
+DEBUG: board_modifier.py:94: Setting D34 footprint position: (380682500, 54120000)
+DEBUG: board_modifier.py:107: Getting MX35 footprint position: (409575000, 57150000)
+DEBUG: board_modifier.py:94: Setting D35 footprint position: (404495000, 54120000)
+DEBUG: board_modifier.py:107: Getting MX36 footprint position: (428625000, 57150000)
+DEBUG: board_modifier.py:94: Setting D36 footprint position: (423545000, 54120000)
+DEBUG: board_modifier.py:107: Getting MX37 footprint position: (447675000, 57150000)
+DEBUG: board_modifier.py:94: Setting D37 footprint position: (442595000, 54120000)
+DEBUG: board_modifier.py:107: Getting MX38 footprint position: (466725000, 57150000)
+DEBUG: board_modifier.py:94: Setting D38 footprint position: (461645000, 54120000)
+DEBUG: board_modifier.py:107: Getting MX39 footprint position: (38100000, 76200000)
+DEBUG: board_modifier.py:94: Setting D39 footprint position: (33020000, 73170000)
+DEBUG: board_modifier.py:107: Getting MX40 footprint position: (61912500, 76200000)
+DEBUG: board_modifier.py:94: Setting D40 footprint position: (56832500, 73170000)
+DEBUG: board_modifier.py:107: Getting MX41 footprint position: (85725000, 76200000)
+DEBUG: board_modifier.py:94: Setting D41 footprint position: (80645000, 73170000)
+DEBUG: board_modifier.py:107: Getting MX42 footprint position: (104775000, 76200000)
+DEBUG: board_modifier.py:94: Setting D42 footprint position: (99695000, 73170000)
+DEBUG: board_modifier.py:107: Getting MX43 footprint position: (123825000, 76200000)
+DEBUG: board_modifier.py:94: Setting D43 footprint position: (118745000, 73170000)
+DEBUG: board_modifier.py:107: Getting MX44 footprint position: (142875000, 76200000)
+DEBUG: board_modifier.py:94: Setting D44 footprint position: (137795000, 73170000)
+DEBUG: board_modifier.py:107: Getting MX45 footprint position: (161925000, 76200000)
+DEBUG: board_modifier.py:94: Setting D45 footprint position: (156845000, 73170000)
+DEBUG: board_modifier.py:107: Getting MX46 footprint position: (180975000, 76200000)
+DEBUG: board_modifier.py:94: Setting D46 footprint position: (175895000, 73170000)
+DEBUG: board_modifier.py:107: Getting MX47 footprint position: (200025000, 76200000)
+DEBUG: board_modifier.py:94: Setting D47 footprint position: (194945000, 73170000)
+DEBUG: board_modifier.py:107: Getting MX48 footprint position: (219075000, 76200000)
+DEBUG: board_modifier.py:94: Setting D48 footprint position: (213995000, 73170000)
+DEBUG: board_modifier.py:107: Getting MX49 footprint position: (238125000, 76200000)
+DEBUG: board_modifier.py:94: Setting D49 footprint position: (233045000, 73170000)
+DEBUG: board_modifier.py:107: Getting MX50 footprint position: (257175000, 76200000)
+DEBUG: board_modifier.py:94: Setting D50 footprint position: (252095000, 73170000)
+DEBUG: board_modifier.py:107: Getting MX51 footprint position: (276225000, 76200000)
+DEBUG: board_modifier.py:94: Setting D51 footprint position: (271145000, 73170000)
+DEBUG: board_modifier.py:107: Getting MX52 footprint position: (295275000, 76200000)
+DEBUG: board_modifier.py:94: Setting D52 footprint position: (290195000, 73170000)
+DEBUG: board_modifier.py:107: Getting MX53 footprint position: (321468750, 85725000)
+DEBUG: board_modifier.py:94: Setting D53 footprint position: (316388750, 82695000)
+DEBUG: board_modifier.py:107: Getting MX54 footprint position: (347662500, 76200000)
+DEBUG: board_modifier.py:94: Setting D54 footprint position: (342582500, 73170000)
+DEBUG: board_modifier.py:107: Getting MX55 footprint position: (366712500, 76200000)
+DEBUG: board_modifier.py:94: Setting D55 footprint position: (361632500, 73170000)
+DEBUG: board_modifier.py:107: Getting MX56 footprint position: (385762500, 76200000)
+DEBUG: board_modifier.py:94: Setting D56 footprint position: (380682500, 73170000)
+DEBUG: board_modifier.py:107: Getting MX57 footprint position: (409575000, 76200000)
+DEBUG: board_modifier.py:94: Setting D57 footprint position: (404495000, 73170000)
+DEBUG: board_modifier.py:107: Getting MX58 footprint position: (428625000, 76200000)
+DEBUG: board_modifier.py:94: Setting D58 footprint position: (423545000, 73170000)
+DEBUG: board_modifier.py:107: Getting MX59 footprint position: (447675000, 76200000)
+DEBUG: board_modifier.py:94: Setting D59 footprint position: (442595000, 73170000)
+DEBUG: board_modifier.py:107: Getting MX60 footprint position: (466725000, 85725000)
+DEBUG: board_modifier.py:94: Setting D60 footprint position: (461645000, 82695000)
+DEBUG: board_modifier.py:107: Getting MX61 footprint position: (38100000, 95250000)
+DEBUG: board_modifier.py:94: Setting D61 footprint position: (33020000, 92220000)
+DEBUG: board_modifier.py:107: Getting MX62 footprint position: (64293750, 95250000)
+DEBUG: board_modifier.py:94: Setting D62 footprint position: (59213750, 92220000)
+DEBUG: board_modifier.py:107: Getting MX63 footprint position: (90487500, 95250000)
+DEBUG: board_modifier.py:94: Setting D63 footprint position: (85407500, 92220000)
+DEBUG: board_modifier.py:107: Getting MX64 footprint position: (109537500, 95250000)
+DEBUG: board_modifier.py:94: Setting D64 footprint position: (104457500, 92220000)
+DEBUG: board_modifier.py:107: Getting MX65 footprint position: (128587500, 95250000)
+DEBUG: board_modifier.py:94: Setting D65 footprint position: (123507500, 92220000)
+DEBUG: board_modifier.py:107: Getting MX66 footprint position: (147637500, 95250000)
+DEBUG: board_modifier.py:94: Setting D66 footprint position: (142557500, 92220000)
+DEBUG: board_modifier.py:107: Getting MX67 footprint position: (166687500, 95250000)
+DEBUG: board_modifier.py:94: Setting D67 footprint position: (161607500, 92220000)
+DEBUG: board_modifier.py:107: Getting MX68 footprint position: (185737500, 95250000)
+DEBUG: board_modifier.py:94: Setting D68 footprint position: (180657500, 92220000)
+DEBUG: board_modifier.py:107: Getting MX69 footprint position: (204787500, 95250000)
+DEBUG: board_modifier.py:94: Setting D69 footprint position: (199707500, 92220000)
+DEBUG: board_modifier.py:107: Getting MX70 footprint position: (223837500, 95250000)
+DEBUG: board_modifier.py:94: Setting D70 footprint position: (218757500, 92220000)
+DEBUG: board_modifier.py:107: Getting MX71 footprint position: (242887500, 95250000)
+DEBUG: board_modifier.py:94: Setting D71 footprint position: (237807500, 92220000)
+DEBUG: board_modifier.py:107: Getting MX72 footprint position: (261937500, 95250000)
+DEBUG: board_modifier.py:94: Setting D72 footprint position: (256857500, 92220000)
+DEBUG: board_modifier.py:107: Getting MX73 footprint position: (280987500, 95250000)
+DEBUG: board_modifier.py:94: Setting D73 footprint position: (275907500, 92220000)
+DEBUG: board_modifier.py:107: Getting MX74 footprint position: (300037500, 95250000)
+DEBUG: board_modifier.py:94: Setting D74 footprint position: (294957500, 92220000)
+DEBUG: board_modifier.py:107: Getting MX75 footprint position: (409575000, 95250000)
+DEBUG: board_modifier.py:94: Setting D75 footprint position: (404495000, 92220000)
+DEBUG: board_modifier.py:107: Getting MX76 footprint position: (428625000, 95250000)
+DEBUG: board_modifier.py:94: Setting D76 footprint position: (423545000, 92220000)
+DEBUG: board_modifier.py:107: Getting MX77 footprint position: (447675000, 95250000)
+DEBUG: board_modifier.py:94: Setting D77 footprint position: (442595000, 92220000)
+DEBUG: board_modifier.py:107: Getting MX78 footprint position: (38100000, 114300000)
+DEBUG: board_modifier.py:94: Setting D78 footprint position: (33020000, 111270000)
+DEBUG: board_modifier.py:107: Getting MX79 footprint position: (59531250, 114300000)
+DEBUG: board_modifier.py:94: Setting D79 footprint position: (54451250, 111270000)
+DEBUG: board_modifier.py:107: Getting MX80 footprint position: (80962500, 114300000)
+DEBUG: board_modifier.py:94: Setting D80 footprint position: (75882500, 111270000)
+DEBUG: board_modifier.py:107: Getting MX81 footprint position: (100012500, 114300000)
+DEBUG: board_modifier.py:94: Setting D81 footprint position: (94932500, 111270000)
+DEBUG: board_modifier.py:107: Getting MX82 footprint position: (119062500, 114300000)
+DEBUG: board_modifier.py:94: Setting D82 footprint position: (113982500, 111270000)
+DEBUG: board_modifier.py:107: Getting MX83 footprint position: (138112500, 114300000)
+DEBUG: board_modifier.py:94: Setting D83 footprint position: (133032500, 111270000)
+DEBUG: board_modifier.py:107: Getting MX84 footprint position: (157162500, 114300000)
+DEBUG: board_modifier.py:94: Setting D84 footprint position: (152082500, 111270000)
+DEBUG: board_modifier.py:107: Getting MX85 footprint position: (176212500, 114300000)
+DEBUG: board_modifier.py:94: Setting D85 footprint position: (171132500, 111270000)
+DEBUG: board_modifier.py:107: Getting MX86 footprint position: (195262500, 114300000)
+DEBUG: board_modifier.py:94: Setting D86 footprint position: (190182500, 111270000)
+DEBUG: board_modifier.py:107: Getting MX87 footprint position: (214312500, 114300000)
+DEBUG: board_modifier.py:94: Setting D87 footprint position: (209232500, 111270000)
+DEBUG: board_modifier.py:107: Getting MX88 footprint position: (233362500, 114300000)
+DEBUG: board_modifier.py:94: Setting D88 footprint position: (228282500, 111270000)
+DEBUG: board_modifier.py:107: Getting MX89 footprint position: (252412500, 114300000)
+DEBUG: board_modifier.py:94: Setting D89 footprint position: (247332500, 111270000)
+DEBUG: board_modifier.py:107: Getting MX90 footprint position: (271462500, 114300000)
+DEBUG: board_modifier.py:94: Setting D90 footprint position: (266382500, 111270000)
+DEBUG: board_modifier.py:107: Getting MX91 footprint position: (307181250, 114300000)
+DEBUG: board_modifier.py:94: Setting D91 footprint position: (302101250, 111270000)
+DEBUG: board_modifier.py:107: Getting MX92 footprint position: (366712500, 114300000)
+DEBUG: board_modifier.py:94: Setting D92 footprint position: (361632500, 111270000)
+DEBUG: board_modifier.py:107: Getting MX93 footprint position: (409575000, 114300000)
+DEBUG: board_modifier.py:94: Setting D93 footprint position: (404495000, 111270000)
+DEBUG: board_modifier.py:107: Getting MX94 footprint position: (428625000, 114300000)
+DEBUG: board_modifier.py:94: Setting D94 footprint position: (423545000, 111270000)
+DEBUG: board_modifier.py:107: Getting MX95 footprint position: (447675000, 114300000)
+DEBUG: board_modifier.py:94: Setting D95 footprint position: (442595000, 111270000)
+DEBUG: board_modifier.py:107: Getting MX96 footprint position: (466725000, 123825000)
+DEBUG: board_modifier.py:94: Setting D96 footprint position: (461645000, 120795000)
+DEBUG: board_modifier.py:107: Getting MX97 footprint position: (38100000, 133350000)
+DEBUG: board_modifier.py:94: Setting D97 footprint position: (33020000, 130320000)
+DEBUG: board_modifier.py:107: Getting MX98 footprint position: (59531250, 133350000)
+DEBUG: board_modifier.py:94: Setting D98 footprint position: (54451250, 130320000)
+DEBUG: board_modifier.py:107: Getting MX99 footprint position: (83343750, 133350000)
+DEBUG: board_modifier.py:94: Setting D99 footprint position: (78263750, 130320000)
+DEBUG: board_modifier.py:107: Getting MX100 footprint position: (107156250, 133350000)
+DEBUG: board_modifier.py:94: Setting D100 footprint position: (102076250, 130320000)
+DEBUG: board_modifier.py:107: Getting MX101 footprint position: (178593750, 133350000)
+DEBUG: board_modifier.py:94: Setting D101 footprint position: (173513750, 130320000)
+DEBUG: board_modifier.py:107: Getting MX102 footprint position: (250031250, 133350000)
+DEBUG: board_modifier.py:94: Setting D102 footprint position: (244951250, 130320000)
+DEBUG: board_modifier.py:107: Getting MX103 footprint position: (273843750, 133350000)
+DEBUG: board_modifier.py:94: Setting D103 footprint position: (268763750, 130320000)
+DEBUG: board_modifier.py:107: Getting MX104 footprint position: (297656250, 133350000)
+DEBUG: board_modifier.py:94: Setting D104 footprint position: (292576250, 130320000)
+DEBUG: board_modifier.py:107: Getting MX105 footprint position: (321468750, 133350000)
+DEBUG: board_modifier.py:94: Setting D105 footprint position: (316388750, 130320000)
+DEBUG: board_modifier.py:107: Getting MX106 footprint position: (347662500, 133350000)
+DEBUG: board_modifier.py:94: Setting D106 footprint position: (342582500, 130320000)
+DEBUG: board_modifier.py:107: Getting MX107 footprint position: (366712500, 133350000)
+DEBUG: board_modifier.py:94: Setting D107 footprint position: (361632500, 130320000)
+DEBUG: board_modifier.py:107: Getting MX108 footprint position: (385762500, 133350000)
+DEBUG: board_modifier.py:94: Setting D108 footprint position: (380682500, 130320000)
+DEBUG: board_modifier.py:107: Getting MX109 footprint position: (419100000, 133350000)
+DEBUG: board_modifier.py:94: Setting D109 footprint position: (414020000, 130320000)
+DEBUG: board_modifier.py:107: Getting MX110 footprint position: (447675000, 133350000)
+DEBUG: board_modifier.py:94: Setting D110 footprint position: (442595000, 130320000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX1 diodes
+DEBUG: board_modifier.py:107: Getting D1 footprint position: (52070000, 35070000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX2 diodes
+DEBUG: board_modifier.py:107: Getting D2 footprint position: (90170000, 35070000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX3 diodes
+DEBUG: board_modifier.py:107: Getting D3 footprint position: (109220000, 35070000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX4 diodes
+DEBUG: board_modifier.py:107: Getting D4 footprint position: (128270000, 35070000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX5 diodes
+DEBUG: board_modifier.py:107: Getting D5 footprint position: (147320000, 35070000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX6 diodes
+DEBUG: board_modifier.py:107: Getting D6 footprint position: (175895000, 35070000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX7 diodes
+DEBUG: board_modifier.py:107: Getting D7 footprint position: (194945000, 35070000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX8 diodes
+DEBUG: board_modifier.py:107: Getting D8 footprint position: (213995000, 35070000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX9 diodes
+DEBUG: board_modifier.py:107: Getting D9 footprint position: (233045000, 35070000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX10 diodes
+DEBUG: board_modifier.py:107: Getting D10 footprint position: (261620000, 35070000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX11 diodes
+DEBUG: board_modifier.py:107: Getting D11 footprint position: (280670000, 35070000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX12 diodes
+DEBUG: board_modifier.py:107: Getting D12 footprint position: (299720000, 35070000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX13 diodes
+DEBUG: board_modifier.py:107: Getting D13 footprint position: (318770000, 35070000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX14 diodes
+DEBUG: board_modifier.py:107: Getting D14 footprint position: (342582500, 35070000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX15 diodes
+DEBUG: board_modifier.py:107: Getting D15 footprint position: (361632500, 35070000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX16 diodes
+DEBUG: board_modifier.py:107: Getting D16 footprint position: (380682500, 35070000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX17 diodes
+DEBUG: board_modifier.py:107: Getting D17 footprint position: (33020000, 54120000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX18 diodes
+DEBUG: board_modifier.py:107: Getting D18 footprint position: (52070000, 54120000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX19 diodes
+DEBUG: board_modifier.py:107: Getting D19 footprint position: (71120000, 54120000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX20 diodes
+DEBUG: board_modifier.py:107: Getting D20 footprint position: (90170000, 54120000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX21 diodes
+DEBUG: board_modifier.py:107: Getting D21 footprint position: (109220000, 54120000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX22 diodes
+DEBUG: board_modifier.py:107: Getting D22 footprint position: (128270000, 54120000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX23 diodes
+DEBUG: board_modifier.py:107: Getting D23 footprint position: (147320000, 54120000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX24 diodes
+DEBUG: board_modifier.py:107: Getting D24 footprint position: (166370000, 54120000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX25 diodes
+DEBUG: board_modifier.py:107: Getting D25 footprint position: (185420000, 54120000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX26 diodes
+DEBUG: board_modifier.py:107: Getting D26 footprint position: (204470000, 54120000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX27 diodes
+DEBUG: board_modifier.py:107: Getting D27 footprint position: (223520000, 54120000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX28 diodes
+DEBUG: board_modifier.py:107: Getting D28 footprint position: (242570000, 54120000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX29 diodes
+DEBUG: board_modifier.py:107: Getting D29 footprint position: (261620000, 54120000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX30 diodes
+DEBUG: board_modifier.py:107: Getting D30 footprint position: (280670000, 54120000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX31 diodes
+DEBUG: board_modifier.py:107: Getting D31 footprint position: (309245000, 54120000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX32 diodes
+DEBUG: board_modifier.py:107: Getting D32 footprint position: (342582500, 54120000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX33 diodes
+DEBUG: board_modifier.py:107: Getting D33 footprint position: (361632500, 54120000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX34 diodes
+DEBUG: board_modifier.py:107: Getting D34 footprint position: (380682500, 54120000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX35 diodes
+DEBUG: board_modifier.py:107: Getting D35 footprint position: (404495000, 54120000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX36 diodes
+DEBUG: board_modifier.py:107: Getting D36 footprint position: (423545000, 54120000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX37 diodes
+DEBUG: board_modifier.py:107: Getting D37 footprint position: (442595000, 54120000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX38 diodes
+DEBUG: board_modifier.py:107: Getting D38 footprint position: (461645000, 54120000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX39 diodes
+DEBUG: board_modifier.py:107: Getting D39 footprint position: (33020000, 73170000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX40 diodes
+DEBUG: board_modifier.py:107: Getting D40 footprint position: (56832500, 73170000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX41 diodes
+DEBUG: board_modifier.py:107: Getting D41 footprint position: (80645000, 73170000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX42 diodes
+DEBUG: board_modifier.py:107: Getting D42 footprint position: (99695000, 73170000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX43 diodes
+DEBUG: board_modifier.py:107: Getting D43 footprint position: (118745000, 73170000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX44 diodes
+DEBUG: board_modifier.py:107: Getting D44 footprint position: (137795000, 73170000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX45 diodes
+DEBUG: board_modifier.py:107: Getting D45 footprint position: (156845000, 73170000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX46 diodes
+DEBUG: board_modifier.py:107: Getting D46 footprint position: (175895000, 73170000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX47 diodes
+DEBUG: board_modifier.py:107: Getting D47 footprint position: (194945000, 73170000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX48 diodes
+DEBUG: board_modifier.py:107: Getting D48 footprint position: (213995000, 73170000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX49 diodes
+DEBUG: board_modifier.py:107: Getting D49 footprint position: (233045000, 73170000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX50 diodes
+DEBUG: board_modifier.py:107: Getting D50 footprint position: (252095000, 73170000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX51 diodes
+DEBUG: board_modifier.py:107: Getting D51 footprint position: (271145000, 73170000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX52 diodes
+DEBUG: board_modifier.py:107: Getting D52 footprint position: (290195000, 73170000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX53 diodes
+DEBUG: board_modifier.py:107: Getting D53 footprint position: (316388750, 82695000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX54 diodes
+DEBUG: board_modifier.py:107: Getting D54 footprint position: (342582500, 73170000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX55 diodes
+DEBUG: board_modifier.py:107: Getting D55 footprint position: (361632500, 73170000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX56 diodes
+DEBUG: board_modifier.py:107: Getting D56 footprint position: (380682500, 73170000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX57 diodes
+DEBUG: board_modifier.py:107: Getting D57 footprint position: (404495000, 73170000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX58 diodes
+DEBUG: board_modifier.py:107: Getting D58 footprint position: (423545000, 73170000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX59 diodes
+DEBUG: board_modifier.py:107: Getting D59 footprint position: (442595000, 73170000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX60 diodes
+DEBUG: board_modifier.py:107: Getting D60 footprint position: (461645000, 82695000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX61 diodes
+DEBUG: board_modifier.py:107: Getting D61 footprint position: (33020000, 92220000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX62 diodes
+DEBUG: board_modifier.py:107: Getting D62 footprint position: (59213750, 92220000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX63 diodes
+DEBUG: board_modifier.py:107: Getting D63 footprint position: (85407500, 92220000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX64 diodes
+DEBUG: board_modifier.py:107: Getting D64 footprint position: (104457500, 92220000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX65 diodes
+DEBUG: board_modifier.py:107: Getting D65 footprint position: (123507500, 92220000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX66 diodes
+DEBUG: board_modifier.py:107: Getting D66 footprint position: (142557500, 92220000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX67 diodes
+DEBUG: board_modifier.py:107: Getting D67 footprint position: (161607500, 92220000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX68 diodes
+DEBUG: board_modifier.py:107: Getting D68 footprint position: (180657500, 92220000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX69 diodes
+DEBUG: board_modifier.py:107: Getting D69 footprint position: (199707500, 92220000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX70 diodes
+DEBUG: board_modifier.py:107: Getting D70 footprint position: (218757500, 92220000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX71 diodes
+DEBUG: board_modifier.py:107: Getting D71 footprint position: (237807500, 92220000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX72 diodes
+DEBUG: board_modifier.py:107: Getting D72 footprint position: (256857500, 92220000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX73 diodes
+DEBUG: board_modifier.py:107: Getting D73 footprint position: (275907500, 92220000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX74 diodes
+DEBUG: board_modifier.py:107: Getting D74 footprint position: (294957500, 92220000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX75 diodes
+DEBUG: board_modifier.py:107: Getting D75 footprint position: (404495000, 92220000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX76 diodes
+DEBUG: board_modifier.py:107: Getting D76 footprint position: (423545000, 92220000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX77 diodes
+DEBUG: board_modifier.py:107: Getting D77 footprint position: (442595000, 92220000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX78 diodes
+DEBUG: board_modifier.py:107: Getting D78 footprint position: (33020000, 111270000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX79 diodes
+DEBUG: board_modifier.py:107: Getting D79 footprint position: (54451250, 111270000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX80 diodes
+DEBUG: board_modifier.py:107: Getting D80 footprint position: (75882500, 111270000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX81 diodes
+DEBUG: board_modifier.py:107: Getting D81 footprint position: (94932500, 111270000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX82 diodes
+DEBUG: board_modifier.py:107: Getting D82 footprint position: (113982500, 111270000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX83 diodes
+DEBUG: board_modifier.py:107: Getting D83 footprint position: (133032500, 111270000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX84 diodes
+DEBUG: board_modifier.py:107: Getting D84 footprint position: (152082500, 111270000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX85 diodes
+DEBUG: board_modifier.py:107: Getting D85 footprint position: (171132500, 111270000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX86 diodes
+DEBUG: board_modifier.py:107: Getting D86 footprint position: (190182500, 111270000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX87 diodes
+DEBUG: board_modifier.py:107: Getting D87 footprint position: (209232500, 111270000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX88 diodes
+DEBUG: board_modifier.py:107: Getting D88 footprint position: (228282500, 111270000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX89 diodes
+DEBUG: board_modifier.py:107: Getting D89 footprint position: (247332500, 111270000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX90 diodes
+DEBUG: board_modifier.py:107: Getting D90 footprint position: (266382500, 111270000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX91 diodes
+DEBUG: board_modifier.py:107: Getting D91 footprint position: (302101250, 111270000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX92 diodes
+DEBUG: board_modifier.py:107: Getting D92 footprint position: (361632500, 111270000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX93 diodes
+DEBUG: board_modifier.py:107: Getting D93 footprint position: (404495000, 111270000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX94 diodes
+DEBUG: board_modifier.py:107: Getting D94 footprint position: (423545000, 111270000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX95 diodes
+DEBUG: board_modifier.py:107: Getting D95 footprint position: (442595000, 111270000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX96 diodes
+DEBUG: board_modifier.py:107: Getting D96 footprint position: (461645000, 120795000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX97 diodes
+DEBUG: board_modifier.py:107: Getting D97 footprint position: (33020000, 130320000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX98 diodes
+DEBUG: board_modifier.py:107: Getting D98 footprint position: (54451250, 130320000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX99 diodes
+DEBUG: board_modifier.py:107: Getting D99 footprint position: (78263750, 130320000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX100 diodes
+DEBUG: board_modifier.py:107: Getting D100 footprint position: (102076250, 130320000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX101 diodes
+DEBUG: board_modifier.py:107: Getting D101 footprint position: (173513750, 130320000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX102 diodes
+DEBUG: board_modifier.py:107: Getting D102 footprint position: (244951250, 130320000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX103 diodes
+DEBUG: board_modifier.py:107: Getting D103 footprint position: (268763750, 130320000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX104 diodes
+DEBUG: board_modifier.py:107: Getting D104 footprint position: (292576250, 130320000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX105 diodes
+DEBUG: board_modifier.py:107: Getting D105 footprint position: (316388750, 130320000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX106 diodes
+DEBUG: board_modifier.py:107: Getting D106 footprint position: (342582500, 130320000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX107 diodes
+DEBUG: board_modifier.py:107: Getting D107 footprint position: (361632500, 130320000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX108 diodes
+DEBUG: board_modifier.py:107: Getting D108 footprint position: (380682500, 130320000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX109 diodes
+DEBUG: board_modifier.py:107: Getting D109 footprint position: (414020000, 130320000)
+DEBUG: key_placer.py:859: Optimizing orientation of MX110 diodes
+DEBUG: board_modifier.py:107: Getting D110 footprint position: (442595000, 130320000)
+INFO: key_placer.py:480: Routing MX7 with D7
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX7:2' at (195685000, 43180000) with pad 'D7:2' at (196195000, 35070000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(195685000, 43180000), (195685000, 35580000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(195685000, 43180000), (196195000, 42670000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(196195000, 42670000), (196195000, 35070000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX101 with D101
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX101:2' at (172503750, 138430000) with pad 'D101:1' at (172263750, 130320000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(172503750, 138430000), (172503750, 130560000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(172503750, 138430000), (172263750, 138190000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(172263750, 138190000), (172263750, 130320000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX4 with D4
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX4:2' at (127260000, 43180000) with pad 'D4:1' at (127020000, 35070000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(127260000, 43180000), (127260000, 35310000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(127260000, 43180000), (127020000, 42940000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(127020000, 42940000), (127020000, 35070000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX2 with D2
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX2:2' at (89160000, 43180000) with pad 'D2:1' at (88920000, 35070000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(89160000, 43180000), (89160000, 35310000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(89160000, 43180000), (88920000, 42940000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(88920000, 42940000), (88920000, 35070000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX31 with D31
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX31:2' at (309985000, 62230000) with pad 'D31:2' at (310495000, 54120000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(309985000, 62230000), (309985000, 54630000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(309985000, 62230000), (310495000, 61720000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(310495000, 61720000), (310495000, 54120000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX33 with D33
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX33:2' at (362372500, 62230000) with pad 'D33:2' at (362882500, 54120000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(362372500, 62230000), (362372500, 54630000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(362372500, 62230000), (362882500, 61720000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(362882500, 61720000), (362882500, 54120000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX39 with D39
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX39:2' at (33760000, 81280000) with pad 'D39:2' at (34270000, 73170000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(33760000, 81280000), (33760000, 73680000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(33760000, 81280000), (34270000, 80770000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(34270000, 80770000), (34270000, 73170000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX94 with D94
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX94:2' at (424285000, 119380000) with pad 'D94:2' at (424795000, 111270000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(424285000, 119380000), (424285000, 111780000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(424285000, 119380000), (424795000, 118870000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(424795000, 118870000), (424795000, 111270000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX84 with D84
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX84:2' at (152822500, 119380000) with pad 'D84:2' at (153332500, 111270000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(152822500, 119380000), (152822500, 111780000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(152822500, 119380000), (153332500, 118870000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(153332500, 118870000), (153332500, 111270000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX103 with D103
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX103:2' at (267753750, 138430000) with pad 'D103:1' at (267513750, 130320000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(267753750, 138430000), (267753750, 130560000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(267753750, 138430000), (267513750, 138190000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(267513750, 138190000), (267513750, 130320000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX54 with D54
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX54:2' at (341572500, 81280000) with pad 'D54:1' at (341332500, 73170000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(341572500, 81280000), (341572500, 73410000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(341572500, 81280000), (341332500, 81040000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(341332500, 81040000), (341332500, 73170000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX105 with D105
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX105:2' at (315378750, 138430000) with pad 'D105:1' at (315138750, 130320000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(315378750, 138430000), (315378750, 130560000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(315378750, 138430000), (315138750, 138190000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(315138750, 138190000), (315138750, 130320000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX73 with D73
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX73:2' at (274897500, 100330000) with pad 'D73:1' at (274657500, 92220000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(274897500, 100330000), (274897500, 92460000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(274897500, 100330000), (274657500, 100090000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(274657500, 100090000), (274657500, 92220000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX99 with D99
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX99:2' at (77253750, 138430000) with pad 'D99:1' at (77013750, 130320000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(77253750, 138430000), (77253750, 130560000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(77253750, 138430000), (77013750, 138190000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(77013750, 138190000), (77013750, 130320000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX50 with D50
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX50:2' at (251085000, 81280000) with pad 'D50:1' at (250845000, 73170000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(251085000, 81280000), (251085000, 73410000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(251085000, 81280000), (250845000, 81040000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(250845000, 81040000), (250845000, 73170000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX44 with D44
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX44:2' at (136785000, 81280000) with pad 'D44:1' at (136545000, 73170000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(136785000, 81280000), (136785000, 73410000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(136785000, 81280000), (136545000, 81040000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(136545000, 81040000), (136545000, 73170000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX95 with D95
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX95:2' at (441585000, 119380000) with pad 'D95:1' at (441345000, 111270000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(441585000, 119380000), (441585000, 111510000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(441585000, 119380000), (441345000, 119140000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(441345000, 119140000), (441345000, 111270000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX62 with D62
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX62:2' at (59953750, 100330000) with pad 'D62:2' at (60463750, 92220000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(59953750, 100330000), (59953750, 92730000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(59953750, 100330000), (60463750, 99820000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(60463750, 99820000), (60463750, 92220000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX1 with D1
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX1:2' at (52810000, 43180000) with pad 'D1:2' at (53320000, 35070000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(52810000, 43180000), (52810000, 35580000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(52810000, 43180000), (53320000, 42670000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(53320000, 42670000), (53320000, 35070000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX53 with D53
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX53:2' at (317128750, 90805000) with pad 'D53:2' at (317638750, 82695000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(317128750, 90805000), (317128750, 83205000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(317128750, 90805000), (317638750, 90295000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(317638750, 90295000), (317638750, 82695000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX17 with D17
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX17:2' at (33760000, 62230000) with pad 'D17:2' at (34270000, 54120000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(33760000, 62230000), (33760000, 54630000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(33760000, 62230000), (34270000, 61720000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(34270000, 61720000), (34270000, 54120000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX69 with D69
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX69:2' at (198697500, 100330000) with pad 'D69:1' at (198457500, 92220000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(198697500, 100330000), (198697500, 92460000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(198697500, 100330000), (198457500, 100090000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(198457500, 100090000), (198457500, 92220000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX5 with D5
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX5:2' at (148060000, 43180000) with pad 'D5:2' at (148570000, 35070000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(148060000, 43180000), (148060000, 35580000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(148060000, 43180000), (148570000, 42670000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(148570000, 42670000), (148570000, 35070000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX49 with D49
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX49:2' at (233785000, 81280000) with pad 'D49:2' at (234295000, 73170000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(233785000, 81280000), (233785000, 73680000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(233785000, 81280000), (234295000, 80770000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(234295000, 80770000), (234295000, 73170000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX29 with D29
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX29:2' at (262360000, 62230000) with pad 'D29:2' at (262870000, 54120000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(262360000, 62230000), (262360000, 54630000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(262360000, 62230000), (262870000, 61720000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(262870000, 61720000), (262870000, 54120000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX61 with D61
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX61:2' at (32010000, 100330000) with pad 'D61:1' at (31770000, 92220000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(32010000, 100330000), (32010000, 92460000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(32010000, 100330000), (31770000, 100090000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(31770000, 100090000), (31770000, 92220000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX107 with D107
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX107:2' at (360622500, 138430000) with pad 'D107:1' at (360382500, 130320000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(360622500, 138430000), (360622500, 130560000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(360622500, 138430000), (360382500, 138190000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(360382500, 138190000), (360382500, 130320000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX75 with D75
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX75:2' at (403485000, 100330000) with pad 'D75:1' at (403245000, 92220000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(403485000, 100330000), (403485000, 92460000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(403485000, 100330000), (403245000, 100090000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(403245000, 100090000), (403245000, 92220000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX46 with D46
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX46:2' at (174885000, 81280000) with pad 'D46:1' at (174645000, 73170000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(174885000, 81280000), (174885000, 73410000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(174885000, 81280000), (174645000, 81040000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(174645000, 81040000), (174645000, 73170000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX27 with D27
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX27:2' at (224260000, 62230000) with pad 'D27:2' at (224770000, 54120000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(224260000, 62230000), (224260000, 54630000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(224260000, 62230000), (224770000, 61720000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(224770000, 61720000), (224770000, 54120000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX71 with D71
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX71:2' at (236797500, 100330000) with pad 'D71:1' at (236557500, 92220000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(236797500, 100330000), (236797500, 92460000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(236797500, 100330000), (236557500, 100090000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(236557500, 100090000), (236557500, 92220000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX38 with D38
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX38:2' at (460635000, 62230000) with pad 'D38:1' at (460395000, 54120000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(460635000, 62230000), (460635000, 54360000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(460635000, 62230000), (460395000, 61990000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(460395000, 61990000), (460395000, 54120000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX57 with D57
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX57:2' at (405235000, 81280000) with pad 'D57:2' at (405745000, 73170000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(405235000, 81280000), (405235000, 73680000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(405235000, 81280000), (405745000, 80770000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(405745000, 80770000), (405745000, 73170000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX83 with D83
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX83:2' at (132022500, 119380000) with pad 'D83:1' at (131782500, 111270000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(132022500, 119380000), (132022500, 111510000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(132022500, 119380000), (131782500, 119140000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(131782500, 119140000), (131782500, 111270000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX20 with D20
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX20:2' at (89160000, 62230000) with pad 'D20:1' at (88920000, 54120000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(89160000, 62230000), (89160000, 54360000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(89160000, 62230000), (88920000, 61990000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(88920000, 61990000), (88920000, 54120000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX48 with D48
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX48:2' at (212985000, 81280000) with pad 'D48:1' at (212745000, 73170000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(212985000, 81280000), (212985000, 73410000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(212985000, 81280000), (212745000, 81040000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(212745000, 81040000), (212745000, 73170000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX35 with D35
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX35:2' at (405235000, 62230000) with pad 'D35:2' at (405745000, 54120000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(405235000, 62230000), (405235000, 54630000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(405235000, 62230000), (405745000, 61720000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(405745000, 61720000), (405745000, 54120000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX3 with D3
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX3:2' at (109960000, 43180000) with pad 'D3:2' at (110470000, 35070000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(109960000, 43180000), (109960000, 35580000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(109960000, 43180000), (110470000, 42670000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(110470000, 42670000), (110470000, 35070000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX76 with D76
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX76:2' at (424285000, 100330000) with pad 'D76:2' at (424795000, 92220000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(424285000, 100330000), (424285000, 92730000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(424285000, 100330000), (424795000, 99820000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(424795000, 99820000), (424795000, 92220000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX24 with D24
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX24:2' at (165360000, 62230000) with pad 'D24:1' at (165120000, 54120000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(165360000, 62230000), (165360000, 54360000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(165360000, 62230000), (165120000, 61990000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(165120000, 61990000), (165120000, 54120000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX12 with D12
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX12:2' at (298710000, 43180000) with pad 'D12:1' at (298470000, 35070000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(298710000, 43180000), (298710000, 35310000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(298710000, 43180000), (298470000, 42940000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(298470000, 42940000), (298470000, 35070000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX67 with D67
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX67:2' at (160597500, 100330000) with pad 'D67:1' at (160357500, 92220000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(160597500, 100330000), (160597500, 92460000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(160597500, 100330000), (160357500, 100090000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(160357500, 100090000), (160357500, 92220000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX16 with D16
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX16:2' at (379672500, 43180000) with pad 'D16:1' at (379432500, 35070000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(379672500, 43180000), (379672500, 35310000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(379672500, 43180000), (379432500, 42940000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(379432500, 42940000), (379432500, 35070000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX14 with D14
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX14:2' at (341572500, 43180000) with pad 'D14:1' at (341332500, 35070000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(341572500, 43180000), (341572500, 35310000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(341572500, 43180000), (341332500, 42940000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(341332500, 42940000), (341332500, 35070000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX108 with D108
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX108:2' at (381422500, 138430000) with pad 'D108:2' at (381932500, 130320000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(381422500, 138430000), (381422500, 130830000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(381422500, 138430000), (381932500, 137920000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(381932500, 137920000), (381932500, 130320000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX55 with D55
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX55:2' at (362372500, 81280000) with pad 'D55:2' at (362882500, 73170000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(362372500, 81280000), (362372500, 73680000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(362372500, 81280000), (362882500, 80770000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(362882500, 80770000), (362882500, 73170000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX88 with D88
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX88:2' at (229022500, 119380000) with pad 'D88:2' at (229532500, 111270000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(229022500, 119380000), (229022500, 111780000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(229022500, 119380000), (229532500, 118870000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(229532500, 118870000), (229532500, 111270000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX51 with D51
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX51:2' at (271885000, 81280000) with pad 'D51:2' at (272395000, 73170000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(271885000, 81280000), (271885000, 73680000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(271885000, 81280000), (272395000, 80770000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(272395000, 80770000), (272395000, 73170000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX30 with D30
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX30:2' at (279660000, 62230000) with pad 'D30:1' at (279420000, 54120000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(279660000, 62230000), (279660000, 54360000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(279660000, 62230000), (279420000, 61990000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(279420000, 61990000), (279420000, 54120000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX77 with D77
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX77:2' at (441585000, 100330000) with pad 'D77:1' at (441345000, 92220000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(441585000, 100330000), (441585000, 92460000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(441585000, 100330000), (441345000, 100090000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(441345000, 100090000), (441345000, 92220000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX79 with D79
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX79:2' at (53441250, 119380000) with pad 'D79:1' at (53201250, 111270000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(53441250, 119380000), (53441250, 111510000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(53441250, 119380000), (53201250, 119140000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(53201250, 119140000), (53201250, 111270000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX68 with D68
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX68:2' at (181397500, 100330000) with pad 'D68:2' at (181907500, 92220000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(181397500, 100330000), (181397500, 92730000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(181397500, 100330000), (181907500, 99820000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(181907500, 99820000), (181907500, 92220000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX32 with D32
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX32:2' at (341572500, 62230000) with pad 'D32:1' at (341332500, 54120000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(341572500, 62230000), (341572500, 54360000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(341572500, 62230000), (341332500, 61990000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(341332500, 61990000), (341332500, 54120000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX58 with D58
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX58:2' at (422535000, 81280000) with pad 'D58:1' at (422295000, 73170000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(422535000, 81280000), (422535000, 73410000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(422535000, 81280000), (422295000, 81040000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(422295000, 81040000), (422295000, 73170000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX40 with D40
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX40:2' at (55822500, 81280000) with pad 'D40:1' at (55582500, 73170000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(55822500, 81280000), (55822500, 73410000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(55822500, 81280000), (55582500, 81040000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(55582500, 81040000), (55582500, 73170000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX80 with D80
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX80:2' at (76622500, 119380000) with pad 'D80:2' at (77132500, 111270000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(76622500, 119380000), (76622500, 111780000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(76622500, 119380000), (77132500, 118870000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(77132500, 118870000), (77132500, 111270000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX10 with D10
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX10:2' at (260610000, 43180000) with pad 'D10:1' at (260370000, 35070000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(260610000, 43180000), (260610000, 35310000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(260610000, 43180000), (260370000, 42940000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(260370000, 42940000), (260370000, 35070000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX81 with D81
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX81:2' at (93922500, 119380000) with pad 'D81:1' at (93682500, 111270000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(93922500, 119380000), (93922500, 111510000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(93922500, 119380000), (93682500, 119140000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(93682500, 119140000), (93682500, 111270000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX37 with D37
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX37:2' at (443335000, 62230000) with pad 'D37:2' at (443845000, 54120000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(443335000, 62230000), (443335000, 54630000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(443335000, 62230000), (443845000, 61720000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(443845000, 61720000), (443845000, 54120000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX19 with D19
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX19:2' at (71860000, 62230000) with pad 'D19:2' at (72370000, 54120000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(71860000, 62230000), (71860000, 54630000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(71860000, 62230000), (72370000, 61720000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(72370000, 61720000), (72370000, 54120000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX42 with D42
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX42:2' at (98685000, 81280000) with pad 'D42:1' at (98445000, 73170000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(98685000, 81280000), (98685000, 73410000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(98685000, 81280000), (98445000, 81040000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(98445000, 81040000), (98445000, 73170000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX90 with D90
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX90:2' at (267122500, 119380000) with pad 'D90:2' at (267632500, 111270000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(267122500, 119380000), (267122500, 111780000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(267122500, 119380000), (267632500, 118870000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(267632500, 118870000), (267632500, 111270000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX100 with D100
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX100:2' at (102816250, 138430000) with pad 'D100:2' at (103326250, 130320000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(102816250, 138430000), (102816250, 130830000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(102816250, 138430000), (103326250, 137920000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(103326250, 137920000), (103326250, 130320000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX74 with D74
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX74:2' at (295697500, 100330000) with pad 'D74:2' at (296207500, 92220000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(295697500, 100330000), (295697500, 92730000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(295697500, 100330000), (296207500, 99820000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(296207500, 99820000), (296207500, 92220000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX23 with D23
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX23:2' at (148060000, 62230000) with pad 'D23:2' at (148570000, 54120000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(148060000, 62230000), (148060000, 54630000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(148060000, 62230000), (148570000, 61720000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(148570000, 61720000), (148570000, 54120000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX106 with D106
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX106:2' at (343322500, 138430000) with pad 'D106:2' at (343832500, 130320000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(343322500, 138430000), (343322500, 130830000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(343322500, 138430000), (343832500, 137920000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(343832500, 137920000), (343832500, 130320000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX98 with D98
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX98:2' at (55191250, 138430000) with pad 'D98:2' at (55701250, 130320000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(55191250, 138430000), (55191250, 130830000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(55191250, 138430000), (55701250, 137920000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(55701250, 137920000), (55701250, 130320000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX92 with D92
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX92:2' at (362372500, 119380000) with pad 'D92:2' at (362882500, 111270000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(362372500, 119380000), (362372500, 111780000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(362372500, 119380000), (362882500, 118870000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(362882500, 118870000), (362882500, 111270000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX109 with D109
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX109:2' at (413010000, 138430000) with pad 'D109:1' at (412770000, 130320000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(413010000, 138430000), (413010000, 130560000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(413010000, 138430000), (412770000, 138190000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(412770000, 138190000), (412770000, 130320000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX22 with D22
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX22:2' at (127260000, 62230000) with pad 'D22:1' at (127020000, 54120000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(127260000, 62230000), (127260000, 54360000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(127260000, 62230000), (127020000, 61990000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(127020000, 61990000), (127020000, 54120000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX102 with D102
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX102:2' at (245691250, 138430000) with pad 'D102:2' at (246201250, 130320000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(245691250, 138430000), (245691250, 130830000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(245691250, 138430000), (246201250, 137920000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(246201250, 137920000), (246201250, 130320000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX82 with D82
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX82:2' at (114722500, 119380000) with pad 'D82:2' at (115232500, 111270000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(114722500, 119380000), (114722500, 111780000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(114722500, 119380000), (115232500, 118870000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(115232500, 118870000), (115232500, 111270000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX59 with D59
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX59:2' at (443335000, 81280000) with pad 'D59:2' at (443845000, 73170000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(443335000, 81280000), (443335000, 73680000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(443335000, 81280000), (443845000, 80770000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(443845000, 80770000), (443845000, 73170000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX6 with D6
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX6:2' at (174885000, 43180000) with pad 'D6:1' at (174645000, 35070000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(174885000, 43180000), (174885000, 35310000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(174885000, 43180000), (174645000, 42940000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(174645000, 42940000), (174645000, 35070000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX26 with D26
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX26:2' at (203460000, 62230000) with pad 'D26:1' at (203220000, 54120000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(203460000, 62230000), (203460000, 54360000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(203460000, 62230000), (203220000, 61990000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(203220000, 61990000), (203220000, 54120000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX72 with D72
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX72:2' at (257597500, 100330000) with pad 'D72:2' at (258107500, 92220000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(257597500, 100330000), (257597500, 92730000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(257597500, 100330000), (258107500, 99820000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(258107500, 99820000), (258107500, 92220000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX13 with D13
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX13:2' at (319510000, 43180000) with pad 'D13:2' at (320020000, 35070000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(319510000, 43180000), (319510000, 35580000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(319510000, 43180000), (320020000, 42670000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(320020000, 42670000), (320020000, 35070000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX96 with D96
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX96:2' at (462385000, 128905000) with pad 'D96:2' at (462895000, 120795000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(462385000, 128905000), (462385000, 121305000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(462385000, 128905000), (462895000, 128395000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(462895000, 128395000), (462895000, 120795000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX78 with D78
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX78:2' at (33760000, 119380000) with pad 'D78:2' at (34270000, 111270000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(33760000, 119380000), (33760000, 111780000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(33760000, 119380000), (34270000, 118870000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(34270000, 118870000), (34270000, 111270000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX86 with D86
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX86:2' at (190922500, 119380000) with pad 'D86:2' at (191432500, 111270000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(190922500, 119380000), (190922500, 111780000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(190922500, 119380000), (191432500, 118870000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(191432500, 118870000), (191432500, 111270000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX64 with D64
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX64:2' at (105197500, 100330000) with pad 'D64:2' at (105707500, 92220000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(105197500, 100330000), (105197500, 92730000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(105197500, 100330000), (105707500, 99820000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(105707500, 99820000), (105707500, 92220000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX66 with D66
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX66:2' at (143297500, 100330000) with pad 'D66:2' at (143807500, 92220000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(143297500, 100330000), (143297500, 92730000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(143297500, 100330000), (143807500, 99820000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(143807500, 99820000), (143807500, 92220000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX11 with D11
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX11:2' at (281410000, 43180000) with pad 'D11:2' at (281920000, 35070000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(281410000, 43180000), (281410000, 35580000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(281410000, 43180000), (281920000, 42670000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(281920000, 42670000), (281920000, 35070000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX52 with D52
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX52:2' at (289185000, 81280000) with pad 'D52:1' at (288945000, 73170000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(289185000, 81280000), (289185000, 73410000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(289185000, 81280000), (288945000, 81040000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(288945000, 81040000), (288945000, 73170000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX18 with D18
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX18:2' at (51060000, 62230000) with pad 'D18:1' at (50820000, 54120000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(51060000, 62230000), (51060000, 54360000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(51060000, 62230000), (50820000, 61990000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(50820000, 61990000), (50820000, 54120000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX47 with D47
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX47:2' at (195685000, 81280000) with pad 'D47:2' at (196195000, 73170000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(195685000, 81280000), (195685000, 73680000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(195685000, 81280000), (196195000, 80770000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(196195000, 80770000), (196195000, 73170000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX85 with D85
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX85:2' at (170122500, 119380000) with pad 'D85:1' at (169882500, 111270000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(170122500, 119380000), (170122500, 111510000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(170122500, 119380000), (169882500, 119140000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(169882500, 119140000), (169882500, 111270000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX25 with D25
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX25:2' at (186160000, 62230000) with pad 'D25:2' at (186670000, 54120000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(186160000, 62230000), (186160000, 54630000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(186160000, 62230000), (186670000, 61720000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(186670000, 61720000), (186670000, 54120000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX89 with D89
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX89:2' at (246322500, 119380000) with pad 'D89:1' at (246082500, 111270000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(246322500, 119380000), (246322500, 111510000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(246322500, 119380000), (246082500, 119140000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(246082500, 119140000), (246082500, 111270000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX21 with D21
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX21:2' at (109960000, 62230000) with pad 'D21:2' at (110470000, 54120000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(109960000, 62230000), (109960000, 54630000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(109960000, 62230000), (110470000, 61720000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(110470000, 61720000), (110470000, 54120000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX91 with D91
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX91:2' at (301091250, 119380000) with pad 'D91:1' at (300851250, 111270000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(301091250, 119380000), (301091250, 111510000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(301091250, 119380000), (300851250, 119140000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(300851250, 119140000), (300851250, 111270000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX15 with D15
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX15:2' at (362372500, 43180000) with pad 'D15:2' at (362882500, 35070000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(362372500, 43180000), (362372500, 35580000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(362372500, 43180000), (362882500, 42670000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(362882500, 42670000), (362882500, 35070000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX70 with D70
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX70:2' at (219497500, 100330000) with pad 'D70:2' at (220007500, 92220000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(219497500, 100330000), (219497500, 92730000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(219497500, 100330000), (220007500, 99820000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(220007500, 99820000), (220007500, 92220000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX63 with D63
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX63:2' at (84397500, 100330000) with pad 'D63:1' at (84157500, 92220000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(84397500, 100330000), (84397500, 92460000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(84397500, 100330000), (84157500, 100090000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(84157500, 100090000), (84157500, 92220000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX8 with D8
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX8:2' at (212985000, 43180000) with pad 'D8:1' at (212745000, 35070000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(212985000, 43180000), (212985000, 35310000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(212985000, 43180000), (212745000, 42940000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(212745000, 42940000), (212745000, 35070000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX93 with D93
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX93:2' at (403485000, 119380000) with pad 'D93:1' at (403245000, 111270000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(403485000, 119380000), (403485000, 111510000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(403485000, 119380000), (403245000, 119140000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(403245000, 119140000), (403245000, 111270000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX36 with D36
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX36:2' at (422535000, 62230000) with pad 'D36:1' at (422295000, 54120000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(422535000, 62230000), (422535000, 54360000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(422535000, 62230000), (422295000, 61990000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(422295000, 61990000), (422295000, 54120000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX45 with D45
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX45:2' at (157585000, 81280000) with pad 'D45:2' at (158095000, 73170000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(157585000, 81280000), (157585000, 73680000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(157585000, 81280000), (158095000, 80770000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(158095000, 80770000), (158095000, 73170000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX41 with D41
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX41:2' at (81385000, 81280000) with pad 'D41:2' at (81895000, 73170000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(81385000, 81280000), (81385000, 73680000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(81385000, 81280000), (81895000, 80770000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(81895000, 80770000), (81895000, 73170000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX56 with D56
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX56:2' at (379672500, 81280000) with pad 'D56:1' at (379432500, 73170000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(379672500, 81280000), (379672500, 73410000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(379672500, 81280000), (379432500, 81040000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(379432500, 81040000), (379432500, 73170000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX110 with D110
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX110:2' at (443335000, 138430000) with pad 'D110:2' at (443845000, 130320000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(443335000, 138430000), (443335000, 130830000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(443335000, 138430000), (443845000, 137920000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(443845000, 137920000), (443845000, 130320000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX104 with D104
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX104:2' at (293316250, 138430000) with pad 'D104:2' at (293826250, 130320000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(293316250, 138430000), (293316250, 130830000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(293316250, 138430000), (293826250, 137920000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(293826250, 137920000), (293826250, 130320000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX97 with D97
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX97:2' at (32010000, 138430000) with pad 'D97:1' at (31770000, 130320000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(32010000, 138430000), (32010000, 130560000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(32010000, 138430000), (31770000, 138190000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(31770000, 138190000), (31770000, 130320000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX28 with D28
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX28:2' at (241560000, 62230000) with pad 'D28:1' at (241320000, 54120000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(241560000, 62230000), (241560000, 54360000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(241560000, 62230000), (241320000, 61990000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(241320000, 61990000), (241320000, 54120000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX65 with D65
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX65:2' at (122497500, 100330000) with pad 'D65:1' at (122257500, 92220000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(122497500, 100330000), (122497500, 92460000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(122497500, 100330000), (122257500, 100090000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(122257500, 100090000), (122257500, 92220000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX34 with D34
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX34:2' at (379672500, 62230000) with pad 'D34:1' at (379432500, 54120000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(379672500, 62230000), (379672500, 54360000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(379672500, 62230000), (379432500, 61990000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(379432500, 61990000), (379432500, 54120000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX87 with D87
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX87:2' at (208222500, 119380000) with pad 'D87:1' at (207982500, 111270000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(208222500, 119380000), (208222500, 111510000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(208222500, 119380000), (207982500, 119140000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(207982500, 119140000), (207982500, 111270000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX60 with D60
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX60:2' at (462385000, 90805000) with pad 'D60:2' at (462895000, 82695000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(462385000, 90805000), (462385000, 83205000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(462385000, 90805000), (462895000, 90295000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(462895000, 90295000), (462895000, 82695000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX43 with D43
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX43:2' at (119485000, 81280000) with pad 'D43:2' at (119995000, 73170000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(119485000, 81280000), (119485000, 73680000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(119485000, 81280000), (119995000, 80770000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(119995000, 80770000), (119995000, 73170000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:480: Routing MX9 with D9
+INFO: key_placer.py:482: Using internal autorouter method
+DEBUG: board_modifier.py:548: Routing at B.Cu layer
+DEBUG: board_modifier.py:565: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:628: Routing pad 'MX9:2' at (233785000, 43180000) with pad 'D9:2' at (234295000, 35070000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(233785000, 43180000), (233785000, 35580000)]
+DEBUG: board_modifier.py:474: Could not add track segment due to detected collision
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(233785000, 43180000), (234295000, 42670000)]
+INFO: board_modifier.py:469: Track added
+INFO: board_modifier.py:464: Adding track segment (B.Cu): [(234295000, 42670000), (234295000, 35070000)]
+INFO: board_modifier.py:469: Track added
+INFO: key_placer.py:514: Removing dangling tracks

@@ -1,0 +1,80 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "7760199a-de41-4e84-b32d-7718bd8365c2")
+	(paper "A4")
+	(lib_symbols)
+	(rectangle
+		(start 127 25.4)
+		(end 241.3 76.2)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 4cd81ff0-4f0b-4ace-90f4-5a5309a47377)
+	)
+	(text "Inputs:"
+		(exclude_from_sim no)
+		(at 138.43 23.368 0)
+		(effects
+			(font
+				(size 5 5)
+				(thickness 1)
+				(bold yes)
+			)
+		)
+		(uuid "b9e6491a-6550-4a7e-8279-909750395187")
+	)
+	(sheet
+		(at 132.08 30.48)
+		(size 50.8 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b29f396f-7543-4141-ab12-4c9f50ec9b13")
+		(property "Sheetname" "Keyboard-matrix"
+			(at 132.08 29.7684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "untitled.kicad_sch"
+			(at 132.08 56.4646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Wireless-keyboard"
+				(path "/7760199a-de41-4e84-b32d-7718bd8365c2"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

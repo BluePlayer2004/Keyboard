@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "JLCPCB-footprints")(type "EasyEDA (JLCEDA) Pro")(uri "${KIPRJMOD}/JLCPCB-footprints/JLCPCB-footprints.elibz")(options "")(descr ""))
+  (lib (name "EASYEDA_MODELS")(type "EasyEDA (JLCEDA) Pro")(uri "${KIPRJMOD}/EASYEDA_MODELS/EASYEDA_MODELS.elibz")(options "")(descr ""))
+)
